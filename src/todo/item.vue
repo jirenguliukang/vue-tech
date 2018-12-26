@@ -17,6 +17,11 @@ export default {
             type: Object,
             required: true
         }
+    },
+    methods: {
+        deleteTodo () {
+            this.$emit('del', this.todo.id)
+        }
     }
 }
 </script>

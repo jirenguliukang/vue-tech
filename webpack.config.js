@@ -3,6 +3,7 @@ const HTMLPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const webpack = require('webpack')
 const isDev = process.env.NODE_ENV ==='development'
+const ExtractPlugin = require('extract-text-webpack-plugin')
 
 const config = {
     target: 'web',
